@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Climbing Shoes Visualization</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+		<link href="climbing.css" rel="stylesheet"/>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/sunburst.js"></script>
+		<script src="climbing.js"></script>
+	</head>
+
+	<body>
+		
+		<header>
+            <h1><img src="boulder_logo.png" alt="Boulder Logo" id="logo"> Climbing Shoes Project by Eric Wang</h1>
+		</header>
+
+		<hr>
+
+		<section id="first-page">
+			<h2>Select your shoe type(s) based on activity/sport.</h2>
+		
+		
+			<div class="centered">
+
+				<div class="buttons">
+					<button id="climbingButton" type="button" onclick="setColor(this.id); loadData()" onmouseover="showDescription(this.id)">Climbing</button>
+					<br/>
+					<button id="hikingButton" type="button" onclick="setColor(this.id); loadData()" onmouseover="showDescription(this.id)">Hiking</button>
+					<br/>
+					<button id="rockclimbingButton" type="button" onclick="setColor(this.id); loadData()" onmouseover="showDescription(this.id)">Rock Climbing</button>
+				</div>
+
+			</div>
+
+			<hr>
+
+			<div id="first-part">
+				<div id="description-container">
+					<p>Climbing shoes are generally 
+						categorized in three ways: Neutral, Moderate, 
+						and Aggressive.</p>
+	
+					<ul>
+						<li><b>Neutral shoes </b>are the most similar 
+							to standard shoes, with a flat design and stiff soles 
+							that provide the most support and comfort.</li>
+						<li><b>Moderate shoes </b>have a downturned shape and thinner soles. 
+							This allows the toes to curl downward and essentially 
+							hook small protrusions in rocks. The thin soles are made 
+							up of stickier rubber which provide grip and more 
+							sensitivity.</li>
+						<li><b>Aggressive shoes </b>are extremely downturned with even 
+							thinner soles. The sharp downturn improves hooking power 
+							and provides greater heel tension for pulling 
+							off difficult techniques. The thin soles provide greater 
+							grip and feel.</li>
+					</ul>
+				</div>
+
+				<div id="sunburst"></div>
+			</div>
+			<hr>
+			<div class="centered">
+				<button id="next" onclick="scrollWin()" disabled="true">Next</button>
+			</div>
+			
+		</section>
+
+		<section id="second-page">
+
+			<h2 class="appear">Select a point for more rating information.</h2>
+
+			<p class="appear">Rating and Price are two factors that can be used to quantify 
+				value in the process of finding a cost-efficient shoe.
+			</p>
+			
+			<div class="vert-center">
+				<div id="scatter"></div>
+			</div>
+			
+			<div id="individual">
+
+				<div id="bar"></div>
+
+				<div id="bar-description" class="centered"></div>
+
+			</div>
+
+		</section>
+		
+		
+		<br><br>
+
+		
+
+	</body>
+
+</html>

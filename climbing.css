@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-height: 25vh;
+}
+
+div {
+    border: 'red';
+}
+
+body {
+    background-color: #242627;
+}
+
+header {
+    height: 12vh;
+}
+
+.centered {
+    text-align: center;
+}
+
+.vert-center {
+    margin-top: 5vh;
+}
+
+#first-page {
+    min-height: 85vh;
+}
+
+section {
+    min-height: 92vh;
+}
+
+#logo {
+    max-width: 13%;
+    height: auto;
+    vertical-align: middle;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#temp {
+    flex: 3;
+}
+
+#buttons2 {
+    flex: 2;
+}
+
+.buttons {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.appear {
+    display: none;
+}
+
+.plots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.plots > div {
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+
+.plots div {
+    overflow: hidden;
+}
+
+* {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+ul {
+    text-align: left;
+    list-style-position: outside;
+}
+
+li, figcaption {
+    color: #FFAF35;
+}
+
+a {
+    color: #b5d2ff;
+}
+
+h1, h2, h3, p {
+    color: #FFAF35;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#first-part {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    overflow: hidden;
+    min-height: 60vh;
+}
+
+#description-container {
+    flex: 1;
+    text-align: center;
+}
+
+#individual {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#bar {
+    flex: 1
+}
+
+#bar-description {
+    flex: 1
+}
+
+#sunburst {
+    flex: 1;
+}
+
+button {
+    width: 200px;
+    padding: 0.35em 1.2em;
+    border: 2px solid #555555;
+    border-radius: 0.12em;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    color:black;
+    transition: all 0.2s;
+    background-color: white;
+}
+
+button:hover {
+    color:#000000;
+    background-color: #ffd8a1;
+}
+
+button:disabled {
+    color: #777777;
+    background-color: #c0c0c0;
+}
