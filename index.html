@@ -26,7 +26,7 @@
 		
 			<div class="centered">
 
-				<div class="buttons">
+				<div class="flex-even">
 					<button id="climbingButton" type="button" onclick="setColor(this.id); loadData()" onmouseover="showDescription(this.id)">Climbing</button>
 					<br/>
 					<button id="hikingButton" type="button" onclick="setColor(this.id); loadData()" onmouseover="showDescription(this.id)">Hiking</button>
@@ -39,7 +39,7 @@
 			<hr>
 
 			<div id="first-part">
-				<div id="description-container">
+				<div id="type-description" class="centered">
 					<p>Climbing shoes are generally 
 						categorized in three ways: Neutral, Moderate, 
 						and Aggressive.</p>
@@ -61,7 +61,7 @@
 					</ul>
 				</div>
 
-				<div id="sunburst"></div>
+				<div id="sunburst" class="centered"></div>
 			</div>
 			<hr>
 			<div class="centered">
@@ -82,9 +82,9 @@
 				<div id="scatter"></div>
 			</div>
 			
-			<div id="individual">
+			<div class="flex-even">
 
-				<div id="bar"></div>
+				<div id="bar" class="centered"></div>
 
 				<div id="bar-description" class="centered"></div>
 

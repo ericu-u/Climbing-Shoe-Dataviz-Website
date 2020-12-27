@@ -6,19 +6,16 @@ img {
     max-height: 25vh;
 }
 
-div {
-    border: 'red';
-}
-
 body {
     background-color: #242627;
 }
 
 header {
-    height: 12vh;
+    max-height: 12vh;
 }
 
 .centered {
+    flex: 1;
     text-align: center;
 }
 
@@ -40,48 +37,16 @@ section {
     vertical-align: middle;
 }
 
-#button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-#temp {
-    flex: 3;
-}
-
-#buttons2 {
-    flex: 2;
-}
-
-.buttons {
+.flex-even {
     display: flex;
     flex: 1;
     flex-direction: row;
-    height: 100%;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .appear {
     display: none;
-}
-
-.plots {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    overflow: hidden;
-}
-
-.plots > div {
-    flex-grow: 1;
-    flex-basis: 25%;
-}
-
-.plots div {
-    overflow: hidden;
 }
 
 * {
@@ -114,29 +79,6 @@ h1, h2, h3, p {
     align-items: stretch;
     overflow: hidden;
     min-height: 60vh;
-}
-
-#description-container {
-    flex: 1;
-    text-align: center;
-}
-
-#individual {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#bar {
-    flex: 1
-}
-
-#bar-description {
-    flex: 1
-}
-
-#sunburst {
-    flex: 1;
 }
 
 button {

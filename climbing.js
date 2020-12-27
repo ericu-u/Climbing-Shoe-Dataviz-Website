@@ -14,7 +14,7 @@ async function loadJSON(path) {
 
 function showDescription(buttonId) {
 
-    description = document.getElementById('description-container');
+    description = document.getElementById('type-description');
 
     if (description.children.length == 4) {
         description.removeChild(description.lastChild);
@@ -260,6 +260,9 @@ function genPlots(data, scatterData) {
                 tooltip: {
                     pointFormat: "{point.name}: {point.value} shoes",
                     enabled: true
+                },
+                dataLabels: {
+                    distance: 30
                 }
             }
         },
@@ -267,8 +270,13 @@ function genPlots(data, scatterData) {
             type: "sunburst",
             borderColor: '#242627',
             data: data,
-            style: {
-                color: '#FFAF35'
+            dataLabels: {
+                color: "black",
+                style: {
+                    fontSize: "13px",
+                    textOutline: "none"
+                },
+                distance: 15
             }
         }]
     });
