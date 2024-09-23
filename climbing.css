@@ -1,105 +1,110 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 img {
-    max-height: 25vh;
+  max-height: 25vh;
 }
 
 body {
-    background-color: #242627;
+  background-color: #242627;
 }
 
 header {
-    max-height: 12vh;
+  max-height: 12vh;
 }
 
 .centered {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 
 .vert-center {
-    margin-top: 5vh;
+  margin-top: 5vh;
 }
 
 #first-page {
-    min-height: 85vh;
+  min-height: 85vh;
 }
 
 section {
-    min-height: 92vh;
+  min-height: 92vh;
 }
 
 #logo {
-    max-width: 13%;
-    height: auto;
-    vertical-align: middle;
+  max-width: 13%;
+  height: auto;
+  vertical-align: middle;
 }
 
 .flex-even {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .appear {
-    display: none;
+  display: none;
 }
 
 * {
-    font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 ul {
-    text-align: left;
-    list-style-position: outside;
+  text-align: left;
+  list-style-position: outside;
 }
 
-li, figcaption {
-    color: #FFAF35;
+li,
+figcaption {
+  color: #ffaf35;
 }
 
 a {
-    color: #b5d2ff;
+  color: #b5d2ff;
 }
 
-h1, h2, h3, p {
-    color: #FFAF35;
-    vertical-align: middle;
-    text-align: center;
+h1,
+h2,
+h3,
+p {
+  color: #ffaf35;
+  vertical-align: middle;
+  text-align: center;
 }
 
 #first-part {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    overflow: hidden;
-    min-height: 60vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 60vh;
 }
 
 button {
-    width: 200px;
-    padding: 0.35em 1.2em;
-    border: 2px solid #555555;
-    border-radius: 0.12em;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 24px;
-    color:black;
-    transition: all 0.2s;
-    background-color: white;
+  width: 200px;
+  padding: 0.35em 1.2em;
+  border: 2px solid #555555;
+  border-radius: 0.12em;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
+  color: black;
+  transition: all 0.2s;
+  background-color: white;
 }
 
 button:hover {
-    color:#000000;
-    background-color: #ffd8a1;
+  color: #000000;
+  background-color: #ffd8a1;
 }
 
 button:disabled {
-    color: #777777;
-    background-color: #c0c0c0;
+  color: #777777;
+  background-color: #c0c0c0;
 }
